@@ -1,0 +1,95 @@
+1. layout_optimizer 修改成 optimize_tensor_layout,不然在训练的后期会报错 
+   错误信息： ValueError: Protocol message RewriterConfig has no "layout_optimizer" field.
+2. 在训练的时候遇到很多路径不对的问题和tinymind的问题
+3. 通过将训练的循环改小，numstep 减小，可以快速的修改代码问题。
+4. 发现用git 上改代码很方便。比zip 方便很多。
+5. 代码连接与tinymind 连接。
+  github: https://github.com/colorfulxd/Homework-9.git
+  tinymind: https://www.tinymind.com/executions/3jwteqpq
+
+输出结果：
+current working dir [/]
+change wording dir to [/tinysrc/models/research]
+current dir is /tinysrc/models/research
+############ 0 runnning #################
+############ 0 training #################
+WARNING:tensorflow:From /tinysrc/models/research/object_detection/trainer.py:210: create_global_step (from tensorflow.contrib.framework.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please switch to tf.train.create_global_step
+INFO:tensorflow:depth of additional conv before box predictor: 0
+INFO:tensorflow:depth of additional conv before box predictor: 0
+INFO:tensorflow:depth of additional conv before box predictor: 0
+INFO:tensorflow:depth of additional conv before box predictor: 0
+INFO:tensorflow:depth of additional conv before box predictor: 0
+INFO:tensorflow:depth of additional conv before box predictor: 0
+INFO:tensorflow:Summary name /clone_loss is illegal; using clone_loss instead.
+INFO:tensorflow:Restoring parameters from /data/colorfulxd/quiz9data1/model.ckpt
+INFO:tensorflow:Starting Session.
+INFO:tensorflow:Saving checkpoint to path /output/train/model.ckpt
+INFO:tensorflow:Starting Queues.
+INFO:tensorflow:global_step/sec: 0
+INFO:tensorflow:Recording summary at step 0.
+INFO:tensorflow:global step 1: loss = 25.4122 (34.424 sec/step)
+INFO:tensorflow:global step 2: loss = 24.4370 (9.769 sec/step)
+INFO:tensorflow:global step 3: loss = 22.9466 (9.876 sec/step)
+INFO:tensorflow:global step 4: loss = 21.7192 (9.647 sec/step)
+INFO:tensorflow:global step 5: loss = 20.3357 (9.750 sec/step)
+INFO:tensorflow:global step 6: loss = 19.1564 (9.872 sec/step)
+INFO:tensorflow:global step 7: loss = 18.1288 (9.734 sec/step)
+INFO:tensorflow:global step 8: loss = 16.7047 (9.902 sec/step)
+INFO:tensorflow:global step 9: loss = 15.4862 (9.821 sec/step)
+INFO:tensorflow:global_step/sec: 0.0815969
+INFO:tensorflow:global step 10: loss = 14.3188 (12.101 sec/step)
+INFO:tensorflow:Recording summary at step 10.
+INFO:tensorflow:global step 11: loss = 13.3064 (10.525 sec/step)
+INFO:tensorflow:global step 12: loss = 12.7727 (9.735 sec/step)
+INFO:tensorflow:global step 13: loss = 11.8413 (10.031 sec/step)
+INFO:tensorflow:global step 14: loss = 11.3339 (9.690 sec/step)
+INFO:tensorflow:global step 15: loss = 10.8745 (9.700 sec/step)
+INFO:tensorflow:global step 16: loss = 10.3447 (9.699 sec/step)
+INFO:tensorflow:global step 17: loss = 9.8997 (9.719 sec/step)
+INFO:tensorflow:global step 18: loss = 9.2181 (9.691 sec/step)
+INFO:tensorflow:global step 19: loss = 9.2928 (9.673 sec/step)
+INFO:tensorflow:global step 20: loss = 8.7566 (9.724 sec/step)
+INFO:tensorflow:global step 21: loss = 8.9007 (9.683 sec/step)
+INFO:tensorflow:global_step/sec: 0.100018
+INFO:tensorflow:global step 22: loss = 8.4584 (12.120 sec/step)
+INFO:tensorflow:Recording summary at step 22.
+INFO:tensorflow:global step 23: loss = 8.1885 (10.509 sec/step)
+INFO:tensorflow:global step 24: loss = 8.1833 (9.714 sec/step)
+INFO:tensorflow:global step 25: loss = 7.8813 (9.653 sec/step)
+INFO:tensorflow:global step 26: loss = 8.3758 (9.768 sec/step)
+INFO:tensorflow:global step 27: loss = 7.8088 (9.750 sec/step)
+INFO:tensorflow:global step 28: loss = 7.6720 (9.771 sec/step)
+INFO:tensorflow:global step 29: loss = 8.0713 (9.833 sec/step)
+INFO:tensorflow:global step 30: loss = 7.7949 (10.002 sec/step)
+INFO:tensorflow:global step 31: loss = 7.3468 (9.744 sec/step)
+INFO:tensorflow:global step 32: loss = 7.0092 (9.745 sec/step)
+INFO:tensorflow:global step 33: loss = 7.1081 (9.759 sec/step)
+INFO:tensorflow:global_step/sec: 0.0997493
+INFO:tensorflow:global step 34: loss = 6.9913 (12.418 sec/step)
+INFO:tensorflow:Recording summary at step 34.
+INFO:tensorflow:global step 35: loss = 6.9807 (10.269 sec/step)
+INFO:tensorflow:global step 36: loss = 6.8856 (9.795 sec/step)
+INFO:tensorflow:global step 37: loss = 6.5680 (9.637 sec/step)
+INFO:tensorflow:global step 38: loss = 6.4796 (9.644 sec/step)
+INFO:tensorflow:global step 39: loss = 7.1782 (9.651 sec/step)
+INFO:tensorflow:global step 40: loss = 6.6581 (9.679 sec/step)
+INFO:tensorflow:global step 41: loss = 6.3070 (9.644 sec/step)
+INFO:tensorflow:global step 42: loss = 6.3864 (9.697 sec/step)
+INFO:tensorflow:global step 43: loss = 6.3582 (9.713 sec/step)
+INFO:tensorflow:global step 44: loss = 6.4928 (10.019 sec/step)
+INFO:tensorflow:global step 45: loss = 6.2103 (9.666 sec/step)
+INFO:tensorflow:global_step/sec: 0.100111
+INFO:tensorflow:global step 46: loss = 6.0820 (12.465 sec/step)
+INFO:tensorflow:Recording summary at step 46.
+INFO:tensorflow:global step 47: loss = 6.1152 (10.339 sec/step)
+INFO:tensorflow:global step 48: loss = 6.0389 (9.773 sec/step)
+INFO:tensorflow:global step 49: loss = 5.6160 (9.753 sec/step)
+INFO:tensorflow:global step 50: loss = 6.3014 (9.687 sec/step)
+INFO:tensorflow:global step 51: loss = 5.8738 (9.725 sec/step)
+INFO:tensorflow:global step 52: loss = 5.7735 (9.651 sec/step)
+INFO:tensorflow:global step 53: loss = 5.6422 (9.683 sec/step)
+INFO:tensorflow:global step 54: loss = 5.3925 (9.617 sec/step)
+INFO:tensorflow:global step 55: loss = 5.7364 (9.702 sec/step)
+INFO:tensorflow:global step 56: loss = 5.1957 (9.637 sec/step)
